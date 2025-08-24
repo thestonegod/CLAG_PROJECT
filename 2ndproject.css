@@ -1,2 +1,54 @@
-body{
+body{ padding:30px ;
+    background: linear-gradient(to top, rgb(145, 46, 237), rgb(175, 14, 203));
+}
+div{
+    color: aliceblue;
+}
+/*all contents with pruple colors*/
+.purple{
+    color: rgb(64, 4, 120);
+   
+}
+p{
+    color: rgb(240, 239, 241);
+}
+img{
+    width: 40px;
+    border:solid;
+    border-radius: 10px;
+    border-color: blueviolet;
+    background-color: blueviolet;
+}
+
+#love img{
+    width: 17px;
+}
+/*Main div*/
+#main_div{
+    background-color: rgb(32, 22, 22);
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 450px;
+    border-radius: 20px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    flex: 1px;
+}
+#time{
+    border: solid;
+    border-color: blueviolet;
+    width: 150px; height: 75px;
+    margin: 3px;
+    border-radius: 10px;
+}
+#time_div{
+    display: flex;
+    padding-left: 250px;
+    
+}
+/*we are coming soon*/
+#Coming{
+    font-weight: bold;
+    font-size: larger;
 }
