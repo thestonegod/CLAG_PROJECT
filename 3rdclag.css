@@ -1,0 +1,65 @@
+/*Whole body style*/
+body{
+    margin: 0;
+    font-family: Arial, Helvetica,;
+    background-color: linear-gradient(to bottom right, #7f00ff,#00d2ff);
+    text-align: center;
+}
+/*The section tag containing every thing*/
+.reviews{
+    padding: 40px 20px;
+}
+h1{
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: black;
+}
+/*Parent div tag*/
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/*Profile edit*/
+.people img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    align-items: center;
+    border-color: rgb(7, 4, 4);
+    border: solid;
+    border-radius: 800px;
+}
+
+/*stars*/
+#stars{
+    width: 100px;
+}
+/*location*/
+#loc{
+    color: rgb(240, 116, 164);
+    font-size: 0.9rem;
+}
+/*comments in the paragrph*/
+.text{
+      color: black;
+      font-size: small;
+}
+/*contains stars and text*/
+.hippo{
+      background: white;
+      box-shadow: 0 4px 10px;
+      padding: 20px;
+      color: black;
+}
+/*Names of those who wrote the review*/
+h3{
+    color: black;
+}
+/*Boxes contain name,image and location */
+.boxes{
+    display: flex;
+    padding: 20px;
+}
