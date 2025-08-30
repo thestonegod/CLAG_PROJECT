@@ -3,9 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mortgage calculator</title>
+    <link rel="stylesheet" href="mortgage.css">
 </head>
 <body>
-    
+  <div class="calculator">
+    <div class="header">
+        <h2>Mortgage Calculator</h2>
+        <a href="#">Clear All</a>
+    </div>
+    <div class="form">
+        <label for="amount">Mortgage Amount</label>
+        <span>£</span>
+        <input type="number" id="amount" placeholder="300,000"><br>
+        <label for="term">Mortgage Term</label>
+        <span>years</span>
+        <input type="number" id="term" placeholder="25"><br>
+        <label for="interest">Interest Rate</label>
+        <span>%</span>
+        <input type="number" id="interest" placeholder="5.25"><br>
+        <label>Mortgage Type</label>
+        <div class="radio_box">
+          <label><input type="radio" checked>Repayment</label>
+          <label><input type="radio">Interest Only</label>
+        </div>
+    </div>
+    <button><span><img src="icon-calculator.svg"></span> Repayments</button>
+    <!--Results section-->
+    <div class="results">
+      <h3>Your results</h3>
+      <p>
+        Your results are shown below based on the information<br>
+        you provided. To adjust the results, edit the form and<br>
+         click "calculate repayments" again.
+         
+      </p>
+      <h3>Your monthly repayments</h3>
+        <div class="monthly-payment">£1,797.74</div>
+        
+        <h3>Total you'll repay over the term</h3>
+        <div class="total-repayment">£539,322.94</div>
+    </div>
+  </div>
 </body>
 </html>
