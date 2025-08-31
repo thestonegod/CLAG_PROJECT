@@ -1,0 +1,25 @@
+body{
+    font-family: sans-serif;
+    background-color: #eaf5fa;
+    margin:150px ;
+    
+}
+/*Mother container*/
+.calculator{
+    display: flex;
+
+}
+
+/*Calculate Repayments*/
+.form{
+    background-color: white;
+    flex: 1;
+    border-radius: 25px;
+}
+/*Results section*/
+.results{
+    background-color: rgb(7, 2, 56);
+    color: aliceblue;
+    flex: 1;
+    border-radius: 25px;
+}
