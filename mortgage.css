@@ -1,25 +1,140 @@
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body{
-    font-family: sans-serif;
-    background-color: #eaf5fa;
-    margin:150px ;
-    
+    font-family: sans-serif;  
 }
-/*Mother container*/
-.calculator{
+
+.insert{
+    border: 1px solid ;
+    border-radius: 5px;
+    border-color: hsl(200, 24%, 40%);
     display: flex;
-
+    justify-content: space-between;
+    margin-top: 10px;
 }
 
-/*Calculate Repayments*/
+.first{
+    justify-content: flex-start;
+
+}
+.insert input{
+    border: none;
+    background: none;
+    outline: none;
+    padding: 5px;
+}
+.insert span{
+  background-color: hsl(202, 86%, 94%);
+  padding: 3.5px;
+  padding-top: 2px;
+}
+.sub-div{
+    margin-top: 15px;
+}
+.form{
+    padding: 10px;
+}
+.sub-div label{
+    color: hsl(200, 24%, 40%) ;
+}
+/* Clear all */
+a{
+    color: hsl(200, 24%, 40%) ;
+}
+.mortgage-type label{
+    color: hsl(200, 24%, 40%)  ;
+}
+.mortgage-type span{
+    color: hsl(202, 55%, 16%);
+    font-weight: bold;    
+}
+
+.radio_box {
+    border-color: hsl(200, 24%, 40%) ;
+    border: 0px 0px 0px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.calculator{
+    overflow: hidden;
+}
+
 .form{
     background-color: white;
-    flex: 1;
-    border-radius: 25px;
+    flex:1 ;
+    
 }
-/*Results section*/
+
+
 .results{
     background-color: rgb(7, 2, 56);
     color: aliceblue;
-    flex: 1;
-    border-radius: 25px;
+    flex:1 ;
+    
+    
 }
+input {
+  margin-bottom: 20px ;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  padding-left: 5px;
+}
+.card{
+    border-style: outset;
+    border-radius: 10px;
+    padding-left: 10px;
+    border-top: 3px solid;
+}
+.money{
+    font-weight: bold;
+    font-size: 35px;
+    color: rgb(167, 193, 16);
+
+}
+\
+button{
+       background-color: rgb(234, 211, 45);
+       border-radius: 5px;
+       padding-right: 20px;
+    
+} */

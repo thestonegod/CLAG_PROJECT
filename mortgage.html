@@ -9,25 +9,51 @@
 <body>
   <div class="calculator">
     <div class="form">
-
-        <h2>Mortgage Calculator</h2>
-        <a href="#">Clear All</a>
-      
-        <label for="amount">Mortgage Amount</label>
-        <span>£</span>
-        <input type="number" id="amount" placeholder="300,000"><br>
-        <label for="term">Mortgage Term</label>
-        <span>years</span>
-        <input type="number" id="term" placeholder="25"><br>
-        <label for="interest">Interest Rate</label>
-        <span>%</span>
-        <input type="number" id="interest" placeholder="5.25"><br>
-        <label>Mortgage Type</label>
-        <div class="radio_box">
-          <label><input type="radio" checked>Repayment</label>
-          <label><input type="radio">Interest Only</label>
+        <div class="header">
+            <h2>Mortgage Calculator</h2>
+            <a href="#">Clear All</a>
         </div>
-        <button><span><img src="icon-calculator.svg"></span> Repayments</button>
+
+        <div class="sub-div">
+          <label for="amount">Mortgage Amount</label>
+          <div class="insert first">
+              <span>&pound;</span>
+              <input type="text" id="amount" value="300,000">
+          </div>
+        </div>
+
+        <div class="desktop-view">
+              <div class="sub-div">
+                <label for="term">Mortgage Term</label>
+                <div class="insert">   
+                    <input type="number" id="term" value="25">
+                   <span>years</span>
+                </div>
+              </div>  
+
+              <div class="sub-div">
+                <label for="interest">Interest Rate</label>
+                <div class="insert">
+                  <input type="number" id="interest" value="5.25">
+                  <span>%</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="mortgage-type">
+          <label>Mortgage Type</label>
+          <div class="radio_box">
+            <div class="choose">
+                <input type="radio" checked>
+                <span> Repayment</span>
+            </div>
+            <div class="choose">
+                <input type="radio">
+                <span>Interest Only</span>
+            </div>
+          </div>
+       </div>
+      <button><span><img src="icon-calculator.svg"></span> Repayments</button>
     </div>
     <!--Results section-->
     <div class="results">
@@ -39,12 +65,12 @@
          
       </p>
      <div class="card">
-       <h3>Your monthly repayments</h3>
+       <p>Your monthly repayments</p>
         <div class="money">£1,797.74</div>
         <hr>
         
-        <h3>Total you'll repay over the term</h3>
-        <div class="total-repayment">£539,322.94</div>
+        <p>Total you'll repay over the term</p>
+        <div class="total">£539,322.94</div>
         </div>
     </div>
   </div>
