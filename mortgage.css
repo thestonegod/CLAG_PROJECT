@@ -30,13 +30,14 @@ body{
 .insert span{
   background-color: hsl(202, 86%, 94%);
   padding: 3.5px;
-  padding-top: 2px;
+  padding-top: 1.5px;
 }
 .sub-div{
     margin-top: 15px;
+    margin-bottom: 15px;
 }
 .form{
-    padding: 10px;
+    padding: 15px;
 }
 .sub-div label{
     color: hsl(200, 24%, 40%) ;
@@ -45,19 +46,61 @@ body{
 a{
     color: hsl(200, 24%, 40%) ;
 }
+/*Mortgage only*/
 .mortgage-type label{
     color: hsl(200, 24%, 40%)  ;
+    
 }
 .mortgage-type span{
     color: hsl(202, 55%, 16%);
-    font-weight: bold;    
-}
+    font-weight: bold; 
+} 
 
-.radio_box {
-    border-color: hsl(200, 24%, 40%) ;
+.choose{
+    border:  solid 1px ;
+    border-color: hsl(202, 55%, 16%); 
+    border-radius: 5px;
+}
+.space-out{
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+/*Repayments*/
+button{
+    background-color: hsl(61, 70%, 52%);
+    border-radius: 15px;
+}
+/*Results*/
+.results{
+    padding: 15px;
+    background-color: hsl(202, 55%, 16%);
+}
+  h3{
+    color: white;
+  }  
+  p{
+    color: white;
+    padding-top: 10px;
+  }
+  .card{
+    background-color: hsl(201, 73%, 10%) ;
+    border: 1px solid;
+    border-top: 50px;
+    border-top-color: hsl(61, 70%, 52%);
+    border-color: hsl(202, 55%, 16%);
+    border-radius: 17px;
+    padding: 20px;
+  }
+  .money{
+    font-size: 40px;
+    color: hsl(61, 70%, 52%) ;
+    padding-top: 10px;
+  }
+  .total{
+    font-size: larger ;
+    color: white;
+  }
     border: 0px 0px 0px 0px;
-}
-
 
 
 
