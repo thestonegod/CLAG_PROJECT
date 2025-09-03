@@ -5,7 +5,7 @@
 }
 
 body{
-    font-family: sans-serif;  
+    font-family: sans-serif ;  
 }
 
 .insert{
@@ -60,15 +60,30 @@ a{
     border:  solid 1px ;
     border-color: hsl(202, 55%, 16%); 
     border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: rgb(239, 239, 194);
+    padding: 3px;
+}
+.choose-me{
+     border:  solid 1px ;
+    border-color: hsl(202, 55%, 16%); 
+    border-radius: 5px;
+    padding: 3px;
 }
 .space-out{
     padding-top: 15px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 /*Repayments*/
 button{
     background-color: hsl(61, 70%, 52%);
-    border-radius: 15px;
+    border-radius: 20px;
+    padding: 5px;
+    
+
+}
+button{
+    padding-left: 0px;
 }
 /*Results*/
 .results{
@@ -81,7 +96,11 @@ button{
   p{
     color: white;
     padding-top: 10px;
+
   }
+.again{
+    margin-bottom: 10px;
+}
   .card{
     background-color: hsl(201, 73%, 10%) ;
     border: 1px solid;
@@ -99,6 +118,7 @@ button{
   .total{
     font-size: larger ;
     color: white;
+    padding-top: 10px;
   }
     border: 0px 0px 0px 0px;
 
