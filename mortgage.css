@@ -77,13 +77,15 @@ a{
 /*Repayments*/
 button{
     background-color: hsl(61, 70%, 52%);
+    color: hsl(202, 55%, 16%);
     border-radius: 20px;
-    padding: 5px;
-    
-
+    padding-top: 11px;
+    padding-right: 100px;
+    padding-left: 100px;
 }
-button{
-    padding-left: 0px;
+.relay{
+    font-size: 17px;
+    font-weight: bolder;
 }
 /*Results*/
 .results{
@@ -103,9 +105,8 @@ button{
 }
   .card{
     background-color: hsl(201, 73%, 10%) ;
-    border: 1px solid;
-    border-top: 50px;
-    border-top-color: hsl(61, 70%, 52%);
+    border: solid;
+    border-top-color: hsl(61, 62%, 40%);
     border-color: hsl(202, 55%, 16%);
     border-radius: 17px;
     padding: 20px;
@@ -122,6 +123,10 @@ button{
   }
     border: 0px 0px 0px 0px;
 
+@media (max-width:1440px) {
+        display: flex:;
+        flex-direction: row;
+}
 
 
 
