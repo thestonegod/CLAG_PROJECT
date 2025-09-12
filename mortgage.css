@@ -6,9 +6,14 @@
 
 body{
     font-family: sans-serif ;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .calculator{
-    background-color: whe;
+    background-color: white;
+    max-width: 800px;
+    
 }
 
 .insert{
@@ -79,14 +84,22 @@ a{
     padding-bottom: 30px;
 }
 /*Repayments*/
-button{
+ button{
     color: hsl(202, 55%, 16%);
     border-radius: 20px;
-    padding-top: 11px;
-    padding-right: 100px;
-    padding-left: 100px;
-}
-.repayment{
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 5px 0px;
+    border: none;
+    background-color: rgb(188, 188, 12);
+    cursor: pointer;
+
+
+ }
+/* .repayment{
     background-color:hsl(61, 70%, 52%) ;
     border: 0cap; 
     display: flex;
@@ -95,12 +108,15 @@ button{
     border-radius: 50px;
     gap: 3px;
     padding: 5px ;
-}
+} */
 .relay{
     font-size: 17px;
     font-weight: bolder;
 }
 /*Results*/
+h3{
+    padding-bottom: 15px;
+}
 .results{
     padding: 15px;
     background-color: hsl(202, 55%, 16%);
@@ -146,7 +162,8 @@ button{
         justify-content: center;
         align-content: center;
         display: flex;
-       
+        border-top-right-radius: 19px;
+        border-bottom-right-radius: 19px;
     }
     .header{
         display: flex;
@@ -164,7 +181,9 @@ button{
     .sub-div{
         padding: 3px;
     }
-    
+    button{
+        width: 250px;
+    }
     .card{
         margin-top: 12.5%;
     }
