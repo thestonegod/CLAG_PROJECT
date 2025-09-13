@@ -1,0 +1,30 @@
+body{
+  background-color:  hsl(219, 28%, 12%);
+  justify-content: center;
+  background-image: 
+}
+.head{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+.logo{
+  height: 40px;
+}
+.nav-links a{
+   text-decoration: none;
+   color: white;
+   /*creates a space between the nav-links*/
+   margin-right: 20px;  
+}
+.productive{
+  width: 100%;
+  padding-top: 20px;
+}
+.mobile-curve{
+  width: 120%; 
+}
+h2{
+  color: White;
+  padding-top: 200px;
+}
