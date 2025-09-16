@@ -5,7 +5,11 @@
 }
 body{
   background-color:  hsl(219, 28%, 12%);
-  justify-content: center; 
+  margin: 0%;
+  font-family: Arial, sans-serif;
+}
+.container{
+  justify-content: center;
   align-items: center;
 }
 .head{
@@ -26,9 +30,6 @@ body{
   position: relative;
   display: inline-block;
   width: 100%;
-  background-image: url(/Images/bg-curvy-mobile.png) no-repeat ;
-  background-size: cover;
-  background-position: bottom;
 }
 .productive{
   width: 100%;height: auto;
@@ -41,9 +42,16 @@ body{
   width: 120%; 
   padding-top: 70%;
   object-fit: cover;
+  align-items: center;
+  justify-content: center;
 }
-
+.insiders{
+  position: absolute;
+  top: 104%;
+}
 h2{
+  justify-content: center;
+  align-content: center;
   color: White;
 }
 .share{
