@@ -6,7 +6,7 @@
 body{
   margin: 0%;
   font-family: Arial, sans-serif;
- background-color:  /hsl(218, 28%, 13%);
+ background-color:  hsl(218, 28%, 13%);
 }
 .container{
   justify-content: center;
@@ -27,17 +27,26 @@ body{
    margin-left: 18px;  
 }
 
+.image-stack{
+  display: relative;
+}
 .productive{
   width: 100%;height: auto;
   padding-top: 20px;
-  padding-left: 20px;
-}
-.curve img{
- width: 120%;
- justify-content: center;
- position: absolute;
- object-fit: contain;
+  padding-left: 70px;
  
+}
+.curve{
+  position: relative;
+}
+.curve {
+ width: 120%;
+ display: grid;
+ justify-content: center;
+ object-fit: contain;
+ position: absolute;
+ top: 100%;
+ z-index: -1;
 }
 
 h2{
@@ -60,12 +69,11 @@ button{
   font-size: 18px;
 }
 .insiders{
-  
   justify-content: center;
-  justify-items: center;
+  align-items: center;
 }
 .icons img{
-  width: 11%;
+  width: 15%;
   padding-top: 15%;
 }
 h3{
@@ -77,4 +85,11 @@ h3{
   color: white;
  
   font-size: 14px;
+}
+.stay-productive img{
+  justify-content: center;
+  align-items: center;
+}
+.stay-productive img{
+  width: 100%;height: auto;
 }
