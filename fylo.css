@@ -11,6 +11,8 @@ body{
   align-items: center;
 }
 .container{
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
@@ -40,7 +42,8 @@ body{
   background-image: url(/Images/bg-curvy-mobile.png) ;
   background-repeat: no-repeat;
   background-size: cover;
- 
+  background-position-y: 130px ;
+  width: 100%;
 }
 
 .productive{
@@ -50,25 +53,39 @@ body{
  
 }
 
-.curve {
- width: 120%;
- display: grid;
- justify-content: center;
- object-fit: contain;
- position: absolute;
- top: 100%;
- z-index: -1;
+
+.files{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+.icons{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.icons p{
+  text-align: center;
+  color: white;
+  font-size: 14px;
 }
 
 h2{
   justify-content: center;
   align-content: center;
   color: White;
+  text-align: center;
 }
 .share{
   color: white;
+  text-align: center;
 }
 button{
+  margin: 10px 0;
   color: white;
   border: solid;
   background-color: hsl(176, 68%, 64%);
@@ -89,11 +106,17 @@ h3{
   padding-top: 7%;
   padding-bottom: 3%;
 }
-.icons p{
-  color: white;
-  font-size: 14px;
-}
 
+.stay-productive{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .stay-productive img{
   width: 100%;height: auto;
+}
+.stay-productive p{
+  color: white;
+  font-size: 14px;
 }
