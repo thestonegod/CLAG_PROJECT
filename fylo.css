@@ -19,7 +19,7 @@ body{
 
 }
 .colour{
-  background-color: hsl(217, 28%, 15%);
+  background-color: hsl(217, 28%, 13%);
   width: 100%;
 }
 .insiders{
@@ -74,6 +74,7 @@ body{
   text-align: center;
   color: white;
   font-size: 14px;
+  line-height: 1.3;
 }
 
 h2{
@@ -82,16 +83,18 @@ h2{
   color: White;
   text-align: center;
 }
-.share{
+.files p{
   color: white;
   text-align: center;
+  font-size: 14px;
+  line-height: 1.3;
 }
 button{
   margin: 10px 0;
   color: white;
   border: solid;
-  background-color: hsl(176, 68%, 64%);
-  border-color: hsl(176, 68%, 64%);
+  background-color:hsl(198, 60%, 50%);
+  border-color: hsl(198, 60%, 50%);
   padding: 9px 40px;
   border-radius: 20px;
   font-weight: bolder;
@@ -122,6 +125,7 @@ h3{
   color: white;
   font-size: 14px;
   padding-bottom: 10px;
+  line-height: 1.5;
 }
 .stay-productive a{
   font-size: 14px;
@@ -151,10 +155,11 @@ h3{
   color: whitesmoke;
   font-size: 14px;
   height: 200px;
+  border-radius: 4px;
 }
 .testimonies p{
   text-align: left;
-  
+  line-height: 1.2;
 }
 .testimonies img{
 
@@ -177,3 +182,56 @@ h3{
   padding-top: 20px;
   font-size: 11px;
 }
+.early-access{
+  width: 300px;
+  background-color: hsl(217, 28%, 15%);
+  border: solid;
+  border-color: hsl(217, 28%, 15%);
+  margin-top: 27%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 8px;
+  margin-left: 16%;
+  border-radius: 9px;
+}
+.early-access p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+}
+.early-access button{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+.action{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 25px;
+}
+.gmail{
+  background-color: white;
+  color: black;
+  font-size: xx-small;
+  text-decoration: none;
+  padding: 16px 79px;
+  border-radius: 20px;
+}
+.start{
+  background-color: hsl(198, 60%, 50%);
+  padding: 13px 63px;
+  font-size: 14px;
+  color: white;
+  border-radius: 25px;
+}
+
