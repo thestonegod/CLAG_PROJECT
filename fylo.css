@@ -19,10 +19,7 @@ body{
   align-items: center;
 
 }
-.colour{
-  background-color: hsl(217, 28%, 13%);
-  width: 100%;
-}
+
 .insiders{
   justify-content: center;
   align-items: center;
@@ -33,7 +30,7 @@ body{
   padding: 10px 20px;
 }
 .logo{
-  height: 35px;
+  height: 30px;
 }
 .nav-links a{
    text-decoration: none;
@@ -43,7 +40,7 @@ body{
 }
 
 .image-stack{
-  background-image: url(/Images/bg-curvy-mobile.png) ;
+  background-image: url(/Images/bg-curvy-mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 120px;
@@ -135,7 +132,7 @@ h3{
 .stay-productive a{
   font-size: 14px;
   color: hsl(176, 68%,64%);
-  text-decoration: none;
+  text-decoration: underline;
 }
 .stay-productive a img{
   width: auto;
@@ -147,9 +144,17 @@ h3{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 180px;
+  padding-top: 140px;
   width: auto;
   gap: 25px;
+  position: relative;
+  padding-bottom: 325px;
+}
+.quotes img{
+  height: 20px;
+  position: absolute;
+  left: 14px;
+  top: 13%;
 }
 .testimonies{
   background-color: hsl(219, 30%, 18%);
@@ -191,8 +196,9 @@ h3{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 150px;
-  padding-bottom: 50px;
+  position: absolute;
+  top: 490%;
+  right: 40px;
 }
 .early-access{
   width: 300px;
@@ -206,6 +212,8 @@ h3{
   flex-direction: column;
   box-shadow: 8px;
   border-radius: 9px;
+  padding-bottom: 30px;
+  padding-top: 15px;
 }
 .early-access p{
   display: flex;
@@ -244,5 +252,83 @@ h3{
   font-size: 14px;
   color: white;
   border-radius: 25px;
+
+}
+footer{
+  background-color: hsl(216, 53%, 9%);
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  color: white;
+  font-size: 14px;
+  padding: 20px;
+
+}
+.footer{
+  object-fit: contain;
+  width: 100%;
+  position: relative;
+  padding-top: 120px;
+}
+
+.emblem{
+ width: 5px;
+  padding-top:  30px;
+  padding-bottom: 30px;
+}
+.residue{
+  display: flex;
+  gap: 22px;
+}
+.residue img{
+  height: 15px;
+}
+.residue p{
+  line-height: 1.5;
+}
+
+.tell{
+  display: flex;
+  gap: 18px;
+  padding-top: 20px;
+}
+.tell img{
+  height: 13px;
+}
+.mail{
+  display: flex;
+  gap: 18px;
+  padding-top: 24px;
+}
+.mail img{
+  height: 17px;
+}
+/*About us etc*/
+.inquiry{
+  padding-top: 60px;
+}
+.inquiry a{
+  color: white;
+  text-decoration: none;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+}
+.connect{
+  padding-top: 25px;
+}
+.connect a{
+  line-height: 2;
+ color: white;
+ text-decoration: none;
+ display: flex;
+ flex-direction: column;
+}
+
+@media (min-width:768px){
+  .desktop-view{
+    display: flex;
+    flex-direction: column;
+  }
 }
 
