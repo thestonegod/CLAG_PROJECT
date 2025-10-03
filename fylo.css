@@ -148,13 +148,12 @@ h3{
   width: auto;
   gap: 25px;
   position: relative;
-  padding-bottom: 325px;
+  padding-bottom: 200px;
 }
 .quotes img{
   height: 20px;
-  position: absolute;
-  left: 49px;
-  top: 13%;
+  margin-right: 28.4cap;
+  margin-bottom: -30px;
 }
 .testimonies{
   background-color: hsl(219, 30%, 18%);
@@ -196,24 +195,19 @@ h3{
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  top: 590%;
-  right: 70px;
+  margin-bottom: -36%;
 }
 .early-access{
-  width: 300px;
-  background-color: hsl(217, 28%, 15%);
-  border: solid;
-  border-color: hsl(217, 28%, 15%);
   display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
   flex-direction: column;
   box-shadow: 8px;
-  border-radius: 9px;
-  padding-bottom: 30px;
-  padding-top: 15px;
+  padding: 50px 20px;
+  border: solid;
+  border-color: hsl(217, 28%, 15%);
+  background-color: hsl(217, 28%, 15%);
+  border-radius: 10px;
 }
 .early-access p{
   display: flex;
@@ -262,12 +256,11 @@ footer{
   color: white;
   font-size: 14px;
   padding: 20px;
-
+  padding-top: 20%;
 }
 .footer{
   object-fit: contain;
   width: 100%;
-  position: relative;
   padding-top: 120px;
 }
 
@@ -327,17 +320,27 @@ footer{
 .socials{
   display: flex;
   justify-content: center;
+  padding-top: 40px;
 }
 .socials img{
   width: 35px;
 }
 
 @media (min-width:768px){
-  .desktop-view{
+  .capabilities{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
+  .stay-productive{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+.stay-productive img{
+  width: 350px;
+}
 }
 
