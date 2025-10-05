@@ -327,6 +327,10 @@ footer{
 }
 
 @media (min-width:768px){
+  .logo{
+    display: flex-start;
+
+  }
   .capabilities{
     display: flex;
     flex-direction: row;
