@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Overpass', sans-serif;
+    background-color:hsl(0, 100%, 100%);
+    overflow-x: hidden;
+    
+}
+.housing{
+    width: 100%;
+}
+.hero{
+    width: 100%;
+    
+}

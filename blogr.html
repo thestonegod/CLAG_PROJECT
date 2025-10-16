@@ -4,16 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stone God's blogr</title>
+    <link rel="stylesheet" href="blogr.css">
 </head>
 <body>
-    <section>
-        <div>
-            <div>
-                
-            </div>
+    <section class="housing">
+        <div class="hero">
+            <header class="header">
+
+                <div class="container">
+                    <div class="logo">
+                        <img src="/Blogr assets/images/logo.svg"  alt="logo">
+                    </div>
+
+                    <div class="hamburger"
+                     onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <nav class="nav">
+                        <ul class="nav-list">
+                            <li class="main"><a href="#">Product</a>
+                                <ul class="dropdown">
+                                    <li><a href="#">Pricing</a></li>
+                                    <li><a href="#">Features</a></li>
+                                    <li><a href="#">Integrations</a></li>
+                                </ul>
+                            </li>
+                            <li  class="main"><a href="#">Company</a>
+                                <ul class="dropdown">
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Team</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                </ul>
+                            </li>
+                            <li  class="main"><a href="#">Connect</a>
+                                <ul class="dropdown">
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Newsletter</a></li>
+                                    <li><a href="#">LinkedIn</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </nav>
+                    <div class="buttons">
+                            <button class="login">Login</button>
+                            <button class="signup">Sign Up</button>
+                  </div>
+                  
+                </div>
+            </header>
+            <div class="hero-text">
+                <h1> A modern publishing platform</h1>
+                <p> Grow your audience and build your online brand</p>
+                <div class="modern-btns">
+                    <button class="start">Start for Free</button>
+                    <button class="learn">Learn More</button>
+                </div>
 
         </div>
     </section>
+    <script>
+        function toggleMenu() {
+            document.querySelector('.hamburger').classList.toggle('active');
+            document.querySelector('.nav').classList.toggle('open');
+            //Click on mobile navigates dropdown
+            document.querySelectorAll('.main > a').forEach(link => {
+                link.addEventListener('click', e => {
+                    if(window.innerWidth <768){
+                        e.preventDefault();
+                        link.parentElement.classList.toggle('open-dropdown');
+                    }
+                })
+            })
+        }
+        
+    </script>
     
 </body>
 </html>
