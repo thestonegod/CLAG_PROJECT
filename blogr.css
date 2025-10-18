@@ -11,16 +11,65 @@ body{
 }
 .housing{
     width: 100%;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.logo img{
+    width: 100px;
 }
 .hero{
     width: 100%;
     background: url("blogr images/bg-pattern-intro-mobile.svg"), 
-    linear-gradient(to right bottom, hsl(356, 100%, 74%), hsl(355, 100%, 63%))
-    ;
+    linear-gradient(to right bottom, hsl(356, 100%, 74%), hsl(355, 100%, 63%));
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;    
+    border: solid hsl(355, 100%, 63%); 
+    border-bottom-left-radius: 60px;   
 }
+.hero-text{
+    text-align: center;
+    color: white;
+    padding: 60px 20px 40px 20px;
+    line-height: 1.4;
+}
+.hero-text h1{
+    font-size: 1.8rem;
+    padding-bottom: 20px;
+    font-weight: 550;
+}
+.hero-text p{
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+.hero-text span{
+    display: block;
+}
+
+.start {
+    background-color: white;
+    color: hsl(0, 100%, 75%);
+    border: solid 1px;
+    padding: 10px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-right: 5px;
+}
+.learn {
+    color:white;
+    border: solid 1px;
+    padding: 10px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-left: 5px; 
+}
+
 .hamburger{
     display: flex;
     flex-direction: column;
@@ -51,7 +100,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 20px;
+    padding: 20px 30px;
 }
 .nav{
     display: none;
@@ -72,9 +121,12 @@ body{
     padding:  0;
     margin: 0;
 }
+.nav-list .main{
+    position: relative;
+}
 .nav-list .dropdown{
     position: absolute;
-    display: none;
+    display: flex;
     padding: 0.5rem 0;
 }
 .nav-list .main:hover .dropdown{
@@ -89,13 +141,90 @@ body{
 .nav-list a:hover{
     color: hsl(0, 100%, 75%);
 }
+.buttons{
+    display: none;
+}
+
+/*Designed for the future*/
+.future{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    line-height: 1.5;
+    padding: 50px;
+}
+.mobile-abilities .break{
+    display: block;
+}
+.heading{
+    font-weight: 600;
+    font-size: 25px;
+    color: hsl(208, 49%, 24%);
+    padding-bottom: 15px;
+}
+.mobile-abilities{
+    text-align: center;
+    font-size: 16px;
+    color: hsl(207, 13%, 34%);
+    padding-top: 50px;
+}
+.mobile-abilities .extensible{
+    padding-bottom: 50px;
+}
+.future .desktop{
+    display: none;
+}
+.future .images{
+    padding-top: 50px;
+}
+    
+.desktop-abilities{
+    display: none;
+    text-align: left;
+    font-size: 16px;
+    color: hsl(207, 13%, 34%);
+}
+.mobile-editor{
+    height:200px;
+}
+/*State of the art infrastructure*/
+.state-desktop{
+    display: none;
+}
+.state-mobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    color: white;
+    background: url("blogr images/bg-pattern-circles.svg");
+}
+.phones img{
+    width: 70%;
+}
+
 @media (min-width: 1024px) {
+    .hero{
+        background: url("blogr images/bg-pattern-intro-desktop.svg"), 
+        linear-gradient(to right bottom, hsl(356, 100%, 74%), hsl(355, 100%, 63%));
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;  
+        border-bottom-left-radius: 0px;
+    }
+    .hero-text span{
+    display: inline-block;
+}
    .hamburger{
     display: none;
    }
    .nav{
     max-height: none;
-    background: none;
+    flex-direction: row;
     display: flex;
     gap: 2rem;
    }
@@ -105,8 +234,65 @@ body{
     align-items: center;
     gap: 30px;
    }
-   .nav-list a{
-    color: white;
+   .header .container{
+    padding: 30px 80px;
    }
-    
+   .buttons{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+   }
+   .buttons .login{
+    padding: 10px 30px;
+    border: solid 1px;
+    border-radius: 20px;
+    background-color: hsl(356, 100%, 74%);
+    border-color: hsl(356, 100%, 74%);
+    font-size: 16px;
+   }
+   .buttons .signup {
+    padding: 10px 30px;
+    border: solid 1px;
+    border-radius: 20px;
+    background-color: white;
+    color: hsl(356, 100%, 74%);
+    border-color: hsl(356, 100%, 74%);
+    font-size: 16px;
+   }
+
+   /*Designed for the future*/
+   .mobile-abilities{
+    display: none;
+   }
+   .mobile-abilities .break{
+    display: block;
+}
+   .desktop-abilities{
+      display: flex;
+      
+   }
+   .future .images{
+    display: none;
+   }
+   .future .desktop{
+    display: block;
+    padding-top: 50px;
+   }
+   .desktop img{
+    width: 50%;
+   }
+   /*State of the art infrastructure*/
+   .state-mobile{
+    display: none;
+   }
+   .state-desktop{
+    display: flex;
+    padding: 50px;
+    color: hsl(207, 13%, 34%);
+    background: url("/blogr images/bg-pattern-circles.svg"),
+    color(hsl(237, 17%, 21%))  ;
+   }
+   .phones img{
+    width: 70%;
+}
 }
