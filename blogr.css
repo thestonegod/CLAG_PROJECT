@@ -26,7 +26,7 @@ body{
     linear-gradient(to right bottom, hsl(356, 100%, 74%), hsl(355, 100%, 63%));
     background-repeat: no-repeat;
     background-size: cover;
-    border: solid hsl(355, 100%, 63%); 
+    border: 2px solid hsl(356, 100%, 74%); 
     border-bottom-left-radius: 60px;   
 }
 .hero-text{
@@ -106,7 +106,6 @@ body{
     display: none;
     min-height: 100px;
     overflow: hidden;
-    background-color: hsl(355, 100%, 63%);
     text-align: center;
     transition: max-height 0.3s ease;
     flex-direction: column;
@@ -126,7 +125,7 @@ body{
 }
 .nav-list .dropdown{
     position: absolute;
-    display: flex;
+    display: none;
     padding: 0.5rem 0;
 }
 .nav-list .main:hover .dropdown{
@@ -193,19 +192,119 @@ body{
 .state-desktop{
     display: none;
 }
+.state-text .heading{
+    color: white;
+    padding-top: 160px;
+}
 .state-mobile{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
     padding: 50px;
-    color: white;
-    background: url("blogr images/bg-pattern-circles.svg");
+    padding-bottom: 100px;
+    color: hsl(207, 16%, 75%);
+    background: hsl(237, 17%, 21%)  url("blogr images/bg-pattern-circles.svg") no-repeat ;
+    background-size: contain;
+    background-position: top;
+    border: 2px solid hsl(237, 17%, 21%);
+    line-height: 1.5;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    position: relative;
+    margin-top: 200px;
+}
+.state-mobile p{
+    text-align: center;
+}
+.state-mobile .phones{
+    position: absolute;
+    top: -150px;
+    left: 40px;
 }
 .phones img{
-    width: 70%;
+    width: 90%;  
 }
+
+.state-desktop{
+    display: none;
+    padding: 50px;
+    color: hsl(206, 14%, 62%);
+    background: hsl(237, 17%, 21%) url("/blogr images/bg-pattern-circles.svg") no-repeat ;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    background-size: contain;
+    border: 2px solid hsl(237, 17%, 21%);
+    line-height: 1.5;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    position: relative;
+    width: 100%;
+}
+.state-desktop .phones{
+    position: absolute;
+    top: -100px;
+    left: 70px;
+}
+.state-desktop .state-text p{
+    text-align: left;
+    padding: 50px;
+    padding-left: 420px;
+    padding-bottom: -300px;
+    
+}
+/*Usability*/
+.usability-mobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    line-height: 1.5;
+    padding: 50px;
+    color: hsl(207, 13%, 34%);
+    text-align: center;
+}
+.usability-desktop{
+    display: none;
+    text-align: left;
+    line-height: 1.5;
+    padding: 50px;
+    color: hsl(207, 13%, 34%);
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    background-color: hsl(240, 10%, 16%);
+    text-align: center;
+    padding: 80px 100px;
+    font-size: 14px;
+    line-height: 1.8;
+    border: 2px solid hsl(240, 10%, 16%);
+    border-top-right-radius: 80px;
+    width: 100%;
+    
+}
+.footer-nav{
+    gap: 40px;
+    font-size: 16px;
+    padding-top: 20px;
+}
+.footer-nav a{
+    text-decoration: none;
+    display: block;
+    color: hsl(210, 6%, 49%);
+}
+.footer-nav a:hover{
+    color: hsl(356, 100%, 74%);
+}
+.footer-nav .Lead{
+    font-weight: 600;
+    margin-top: 30px;
+    padding-bottom: 15px;
+    color: white
+}       
 
 @media (min-width: 1024px) {
     .hero{
@@ -261,16 +360,35 @@ body{
    }
 
    /*Designed for the future*/
+   .heading{
+    margin-top: 40px;
+   }
+   .future{
+    padding-top: 100px;
+    align-items: center;
+    text-align: left;
+   }
+   .desktop-abilities{
+    display: flex ;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: center;
+    align-items: center;}
+   .desktop-abilities .desktop img{
+    width: 120%;
+    margin-left: 100px;
+   }
+   .desktop-abilities .spacer{
+    width: 160%;
+   }
+   
+   .future .heading{
+    display: block;
+   }
    .mobile-abilities{
     display: none;
    }
-   .mobile-abilities .break{
-    display: block;
-}
-   .desktop-abilities{
-      display: flex;
-      
-   }
+
    .future .images{
     display: none;
    }
@@ -285,14 +403,57 @@ body{
    .state-mobile{
     display: none;
    }
-   .state-desktop{
-    display: flex;
-    padding: 50px;
-    color: hsl(207, 13%, 34%);
-    background: url("/blogr images/bg-pattern-circles.svg"),
-    color(hsl(237, 17%, 21%))  ;
+   .state-desktop .heading{
+    padding-bottom: 0px;
    }
-   .phones img{
-    width: 70%;
-}
+    .state-desktop .state-text{
+        width: 120%;
+    }
+ 
+    .state-desktop{
+     display: flex;
+     margin-top: 100px;
+    }
+    .state-desktop .phones{
+      width: 40%;
+     top: -120px;
+     left: 100px;
+    }
+    .usability-mobile{
+     display: none;
+    }
+    .usability-desktop{
+     display: flex;
+     margin-top: 100px;
+    }
+    .usability-desktop .spacer{
+      width: 120%;
+    }
+    .laptop img{
+     width: 100%;
+    }
+    .laptop{
+     position: relative;
+     left: -205px;
+    }
+    /*Footer*/
+    
+
+    .footer-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+    }
+    .footer-nav{
+        display: flex;
+        flex-direction: row;
+        gap: 80px;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-nav a:hover{
+        color: hsl(356, 100%, 74%);
+    }
 }
