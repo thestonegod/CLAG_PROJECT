@@ -299,7 +299,7 @@ footer{
 .footer-nav a:hover{
     color: hsl(356, 100%, 74%);
 }
-.footer-nav .Lead{
+.footer-nav .lead{
     font-weight: 600;
     margin-top: 30px;
     padding-bottom: 15px;
@@ -455,5 +455,8 @@ footer{
     }
     .footer-nav a:hover{
         color: hsl(356, 100%, 74%);
+    }
+    .footer-nav .lead{
+        margin-top: 0px;
     }
 }
